@@ -12,6 +12,14 @@ body{
 #menu{
      
     background: #c5c5b2;
-    padding: ;
+    padding: 18px;
+
+}
+
+a {
+
+    color: #4b566a;
+    text-decoration: none;
+    font-weight: bold;
 
 }
