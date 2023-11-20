@@ -23,3 +23,24 @@ a {
     font-weight: bold;
 
 }
+
+
+#conteudo{
+     
+    background: #e8e8e8;
+    padding: 10px;
+
+
+}
+
+.centralizar{
+
+    text-align: center;
+}
+
+h1{
+
+    color: #828271;
+    font-size: 1.2em;
+
+}
