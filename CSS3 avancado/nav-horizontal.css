@@ -5,7 +5,16 @@ ul {
     list-style: none;
     border:  1px solid red;
     width: 720px;
-    
+    background: #ffffff url(image/fundo-horizontal.png) repeat-x;
+
+
+
+}
+
+
+ul li{
+    border:  1px solid red;
+    display: inline;
 
 
 }
