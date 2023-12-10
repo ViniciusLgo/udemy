@@ -3,18 +3,26 @@ ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
-    border:  1px solid red;
     width: 720px;
     background: #ffffff url(image/fundo-horizontal.png) repeat-x;
-
+    float: left;
 
 
 }
 
 
 ul li{
-    border:  1px solid red;
-    display: inline;
+    float: left;
 
+
+}
+
+ul a{
+    display: block;
+    padding: 0 2em;
+    margin: 0px;
+    line-height: 2em;
+    text-decoration: none;
+    color: wheat;
 
 }
