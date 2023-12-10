@@ -24,5 +24,19 @@ ul a{
     line-height: 2em;
     text-decoration: none;
     color: wheat;
+    background: url(image/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a{
+
+    background: none;
+
+}
+
+ul a:hover{ 
+
+    color: #085662;
+    background: #44cade;
+
 
 }
