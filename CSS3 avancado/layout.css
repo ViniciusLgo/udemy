@@ -23,9 +23,10 @@ body{
 #conteudo{
     width: 520px;
     float: right;
-    border: 1px solid red;
 
 }
+
+#conteudo-prinicipal
 
 #navegacao{
     width: 180px;
@@ -34,12 +35,25 @@ body{
     padding-bottom: 20px;
     background: #d1d1d1;
 
-    border: 1px solid red;
-
 }
 
 #rodape{
     clear: both;
     background: #c4c4c4;
     padding: 5px;
+}
+
+
+ul, a{
+
+    list-style: none;
+    text-decoration: none;
+    
+
+}
+
+a:hover, a:visited{
+
+    background-color: rgb(108, 185, 35);
+
 }
