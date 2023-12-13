@@ -26,18 +26,20 @@ body{
 
 }
 
-#conteudo-prinicipal{
+#conteudo-principal{
 
     width: 320px;
     float: left;
+    
 }
 
 
 #conteudo-secundario{
 
-    width: 180;
+    width: 180px;
     float: right;
     background: #d1d1d1;
+
 }
 
 #navegacao{
