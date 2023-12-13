@@ -26,7 +26,19 @@ body{
 
 }
 
-#conteudo-prinicipal
+#conteudo-prinicipal{
+
+    width: 320px;
+    float: left;
+}
+
+
+#conteudo-secundario{
+
+    width: 180;
+    float: right;
+    background: #d1d1d1;
+}
 
 #navegacao{
     width: 180px;
