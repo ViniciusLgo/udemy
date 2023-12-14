@@ -1,0 +1,48 @@
+body{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	
+}
+
+.caixa{
+
+	width: 400px;
+	background: #dedede url(image/fundo-arredondamento.png) no-repeat left top;
+}
+
+.caixa h2{
+	padding: 10px 20px 0 20px;
+	background: url(image/topo2.png) no-repeat left top;
+
+}
+
+.caixa p{
+	padding: 0px 20px;
+	
+}
+
+body{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	
+}
+
+.caixa {
+    width: 400px;
+    background: #dedede url(image/fundo-arredondamento.png) no-repeat left top;
+}
+
+.caixa h2{
+	padding: 10px 20px 0 20px;
+	background: url(image/topo2.png) no-repeat left top;
+
+}
+
+.caixa p{
+	padding: 0px 20px;
+	
+}
+
+.class .ultimo{
+	background: url(image/baixo2.png) no-repeat left bottom;
+	width: 400px;
+	height: 24px;
+}
