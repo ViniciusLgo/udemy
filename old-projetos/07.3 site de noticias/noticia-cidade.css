@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+
+}
+
+body{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(imagens/fundo.png) repeat-x;
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+    
+}
+
+#topo{
+
+    height: 150px;
+    background: url(imagens/detalhe-topo.png) no-repeat right top;
+    padding-top: 25px;
+    
+}
+
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url(imagens/logo.png) no-repeat center;
+    text-indent: -3000px;
+
+}
+
+/* Barra de navegacao */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+
+
+
+}
+
+#topo ul{
+    margin-top: 30px;
+    background: #b10333;
+
+}
+
+
+#topo ul li{
+
+    float: left;
+}
