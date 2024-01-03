@@ -48,6 +48,7 @@ ul{
 #topo ul{
     margin-top: 30px;
     background: #b10333;
+    float: left; 
 
 }
 
@@ -56,3 +57,24 @@ ul{
 
     float: left;
 }
+#topo ul a{
+    display: block; 
+    font-size: 0.9em;
+    color: #fff;
+    line-height: 2.1em; /* Altura da imagem do logo */
+    padding: 0 1.5em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: url(imagens/divisor.png) no-repeat left center;
+    }
+    
+#topo ul .primeiro a{
+
+    background: none;
+    }
+
+#topo ul a:hover{
+
+    color: #69001d;
+
+    }
