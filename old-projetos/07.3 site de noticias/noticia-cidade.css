@@ -78,3 +78,14 @@ ul{
     color: #69001d;
 
     }
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.inter #navegacao a#inter,
+body.economia #navegacao a#economia {
+    color: #fff;
+    background: #de003e;
+    cursor: text;
+
+}
+
