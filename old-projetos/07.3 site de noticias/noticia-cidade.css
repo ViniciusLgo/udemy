@@ -89,3 +89,34 @@ body.economia #navegacao a#economia {
 
 }
 
+/*configurar layout tres colunmas */
+
+#conteudo{
+
+    background: #f5f5f5;
+    margin-top: 60px;
+}
+
+#primario{
+    width: 270px;
+    background: blue;
+    float: left;
+}
+#secundario{
+    width: 270px;
+    background: green;
+    float: left;
+}
+#lateral{
+    width: 180px;
+    background: yellow;
+    float: left;
+}
+
+/*rodape */
+
+#container-rodape{
+    padding: 20px;
+    background: #294c71;
+    
+    }23
