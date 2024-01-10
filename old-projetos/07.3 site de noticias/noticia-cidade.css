@@ -97,8 +97,20 @@ body.economia #navegacao a#economia {
     margin-top: 60px;
 }
 
-#primario{
+#tres-colunas #primario{
     width: 270px;
+    
+    float: left;
+    margin: 0 0 20px 195px;
+}
+#duas-colunas #primario{
+    width: 555px;
+    background: blue;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+#uma-colunas #primario{
+    width: 555px;
     background: blue;
     float: left;
     margin: 0 0 20px 195px;
@@ -111,9 +123,33 @@ body.economia #navegacao a#economia {
 }
 #lateral{
     width: 180px;
-    background: yellow;
     float: left;
     margin: 0 0 20px -750px;
+}
+
+
+/*caixa */
+.caixa{
+    background: #f3f3f3 url(imagens/fundo-caixa.png);
+    margin: 10px 0;
+    padding: 5px;
+
+}
+
+h2{
+    font-size: 1em;
+    background: #294c71;
+    color: white;
+    padding: 5px;
+
+}
+
+.caixa-conteudo{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px ;
+
+
 }
 
 /*rodape */
