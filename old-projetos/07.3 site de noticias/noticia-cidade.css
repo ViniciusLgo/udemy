@@ -101,16 +101,19 @@ body.economia #navegacao a#economia {
     width: 270px;
     background: blue;
     float: left;
+    margin: 0 0 20px 195px;
 }
 #secundario{
     width: 270px;
     background: green;
     float: left;
+    margin: 0 0 20px 15px;
 }
 #lateral{
     width: 180px;
     background: yellow;
     float: left;
+    margin: 0 0 20px -750px;
 }
 
 /*rodape */
@@ -120,3 +123,4 @@ body.economia #navegacao a#economia {
     background: #294c71;
     
     }
+    
