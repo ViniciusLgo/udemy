@@ -24,17 +24,52 @@ h3{
 
 /* EFEITO PARALLAX -----------------*/
 
-.caixa1, .caixa2{
-    border: 1px solid red;
-height: 100% ;
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6{
+   
+    height: 100% ;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
 }
+
 
 .caixa1{
-
+    background-image: url(parallax/imagem1.jpg) ;
 }
-
 .caixa2{
+    background-image: url(parallax/imagem2.jpg) ;
+}
+.caixa3{
+    background-image: url(parallax/imagem3.jpg) ;
+}
+.caixa4{
+    background-image: url(parallax/imagem4.jpg) ;
+}
+.caixa5{
+    background-image: url(parallax/imagem5.jpg) ;
+}
+.caixa6{
+    background-image: url(parallax/imagem6.jpg) ;
+}
+
+.conteudo-titulo{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
 
 }
 
+.conteudo-titulo span.titulo{
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px; 
+    color: #fff;
 
+
+}
