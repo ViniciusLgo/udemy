@@ -1,0 +1,31 @@
+header{
+    border: 1px solid salmon;
+    background: olivedrab;
+    padding: 2px;
+}
+
+nav{
+    border: 1px solid rgb(27, 126, 180);
+    background: rgb(174, 164, 190);
+    padding: 15px;
+} 
+
+footer{
+    background: rgb(144, 118, 3);
+
+}
+
+article{
+    background-color: orange;
+    padding: 2px;
+}
+
+section{
+
+    border: 1px dotted white;
+    padding: 10px;
+}
+
+aside{
+    background-color: aqua;
+}
