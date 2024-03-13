@@ -44,3 +44,94 @@ body{
     flex-direction: column;
     gap: 2rem;
 }
+
+#title{
+    font-size: 2.25rem;
+    position: relative;
+}
+
+
+#title::after{
+    position: relative;
+    content: '';
+    background-color: #1ca34a;
+    display: block;
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+
+}
+
+.input-box label{
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f3f46;
+    padding: 0.3rem;
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+.input-field span,
+.input-field i {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    padding: 0.6 1rem;
+}
+
+.input-field input{
+    background-color: #3f3f46;
+    border: none;
+    color: #f8fafc;
+    font-size: 1.25rem;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+}
+
+.input-field input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+.input-field input::focus{
+    outline: none;
+}
+
+#calculate{
+    background-color: #1ca34a;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    color: #f8fafc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionado */
+}
+
+#calculate:hover{
+    background-color: #1a9340;
+    transform: scale(1.05); /* Adicionado */
+}
+
+#result{ 
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid #ffffff34;
+    padding: 0.75rem 0;
+}
+
+#bmi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}	

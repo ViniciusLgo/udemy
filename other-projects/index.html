@@ -17,56 +17,58 @@
             <img src="assets/image/ilustrator.svg" alt="">
         </section>
         <section id="calculator">
-            <form>
+            <form id="form">
                 <h1 id="title">
                     CALCULADORA DE IMC
                 </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em KG
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required>
+                        <span>KG</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Altura em metros
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" id="height" required>
+                        <span>M</span>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    CALCULAR
+                </button>
             </form>
-            <div class="input-box">
-                <label for="weight">
-                    Peso em KG
-                </label>
-                <div class="input-field">
-                    <i class="fa-solid fa-weight-hanging"></i>
-                    <input type="number" id="weight" required>
-                    <span>KG</span>
-                </div>
-            </div>
-            <div class="input-box">
-                <label for="height">
-                    ALtura em metros
-                </label>
-                <div class="input-field">
-                    <i class="fa-solid fa-ruler"></i>
-                    <input type="number" id="height" required>
-                    <span>M</span>
-                </div>
-            </div>
-            <button id="calculate">
-                CALCULAR
-            </button>
+
             <div id="infos">
                 <div id="result">
                     <div id="bmi">
                         <span id="value"></span>
-                        <span>seu IMC</span>
+                        <span>SEU IMC</span>
                     </div>
-                    <div id="descripition">
-                        <span id="status"></span>
+                    <div id="description">
                         <span></span>
-                    </div>
-                    <div id="more_nfo">
-                        <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
-                            Mais informações sobre IMC
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
                     </div>
                 </div>
 
+                <div id="more_info">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
+                        Mais informações sobre IMC
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
-
 </body>
 
 </html>
