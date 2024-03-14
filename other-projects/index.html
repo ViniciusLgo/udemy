@@ -28,7 +28,7 @@
                     </label>
                     <div class="input-field">
                         <i class="fa-solid fa-weight-hanging"></i>
-                        <input type="number" id="weight" required>
+                        <input type="text" id="weight" required>
                         <span>KG</span>
                     </div>
                 </div>
@@ -39,28 +39,28 @@
                     </label>
                     <div class="input-field">
                         <i class="fa-solid fa-ruler"></i>
-                        <input type="number" id="height" required>
+                        <input type="text" id="height" required>
                         <span>M</span>
                     </div>
                 </div>
 
-                <button id="calculate">
+                <button type="submit" id="calculate">
                     CALCULAR
                 </button>
             </form>
 
-            <div id="infos">
+            <div id="infos" class="hidden">
                 <div id="result">
                     <div id="bmi">
                         <span id="value"></span>
-                        <span>SEU IMC</span>
+                        <span>seu imc</span>
                     </div>
                     <div id="description">
                         <span></span>
                     </div>
                 </div>
 
-                <div id="more_info">
+                <div id="more_info" class="hidden">
                     <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
                         Mais informações sobre IMC
                         <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -69,6 +69,6 @@
             </div>
         </section>
     </main>
+    <script src="Js/script.js"></script>
 </body>
-
 </html>
