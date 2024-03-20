@@ -21,7 +21,9 @@ a:hover {
     color: #227115;
 }
 
-
+#logo h1 {
+   float: left;
+}
 
 #logo a {
     width: 1080px;
