@@ -3,7 +3,9 @@
     padding: 0;
 
 }
-
+.fundo > h1{
+    text-transform: uppercase;
+}
 .fundo{
     background-image: linear-gradient(45deg,black, rgb(255, 0, 0));
     height: 100vh;
