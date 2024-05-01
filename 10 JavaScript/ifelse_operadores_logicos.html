@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>JavaScript</title>
     <script>
 
-        if(2 == 2 && 3 >= 2 && 'a' == 'b'){  
+        /*
+        if (2 == 2 && 3 >= 2 && 'a' == 'b') {
             document.write('Verdadeiro <br>')
         }
-        else{
+        else {
             document.write('Falso <br>')
         }
+    
+        || = OU
+        ! = NÃO
+        && = E
+        */
 
 
+        var nota = prompt('Digite a nota do aluno:')
+        var faltas = prompt('Digite o número de faltas do aluno:')
 
-       // && = E
-       // || = OU
-       // ! = NÃO
+        var media = 7
+        var faltas_max = 10
+
+        if (nota >= media && faltas <= faltas_max) {
+            document.write('Aprovado')
+        } else {
+            document.write('Reprovado')
+        }
         
+        
+        //Operador ternário   
+        // var resultado = <condicao> ? <verdadeiro> : <falso>  
+        
+        var resultado = (nota >= media && faltas <= faltas_max) ? 'Aprovado' : 'Reprovado'
+        document.write('<br>' + resultado)
 
+    
 
     </script>
 </head>
+
 <body>
 
 </body>
+
 </html>
