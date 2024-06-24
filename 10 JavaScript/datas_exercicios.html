@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <!--
+    METODO 1 ( MAIS DIFICIL)
+  <h1>Calculadora Simples</h1>
+  <label for="num1">Primeiro número:</label>
+  <input type="number" id="num1"><br><br>
+
+  <label for="operacao">Operação (soma ou subtracao):</label>
+  <input type="text" id="operacao"><br><br>
+
+  <label for="num2">Segundo número:</label>
+  <input type="number" id="num2"><br><br>
+
+  <button onclick="calcular()">Calcular</button>
+
+  <p id="resultado"></p>
+-->
+
+  <script>
+    /* 
+    METODO 1 ( MAIS DIFICIL)
+    function calcular() {
+      var num1 = parseFloat(document.getElementById('num1').value);
+      var operacao = document.getElementById('operacao').value.toLowerCase();
+      var num2 = parseFloat(document.getElementById('num2').value);
+      var resultado;
+
+      if (operacao === 'soma') {
+        resultado = num1 + num2;
+      } else if (operacao === 'subtracao') {
+        resultado = num1 - num2;
+      } else {
+        resultado = 'Operação inválida';
+      }
+
+      document.getElementById('resultado').textContent = 'O resultado é: ' + resultado;
+    }
+    */
+
+    //METODO 2 (MAIS FACIL)
+
+    var num1 = parseFloat(prompt('Digite o primeiro número:'));
+    var operacao = prompt('Digite a operação (soma ou subtracao):').toLowerCase();
+    var num2 = parseFloat(prompt('Digite o segundo número:'));
+    var resultado;
+
+    if (operacao === 'soma') {
+      resultado = num1 + num2;
+    } else if (operacao === 'subtracao') {
+      resultado = num1 - num2;
+    } else {
+      resultado = 'Operação inválida';
+    }
+
+    document.write('O resultado é: ' + resultado);
+    
+    document.write('<br /><br /><hr />')
+    
+    //METODO 3 (GABARITO)
+
+    var num1 = prompt('Digite o primeiro número:');
+    var operacao = prompt('Digite a operação (soma ou subtracao');
+    var num2 = prompt('Digite o segundo número:');
+
+    function calc(num1,num2,operacao){
+      num1 = parseFloat(num1);
+      num2 = parseFloat(num2);
+
+      var resultado = 0;
+
+      if(operacao === 'soma'){
+        resultado = num1 + num2;
+      }else if(operacao === 'subtracao'){
+        resultado = num1 - num2;
+      }else{
+        resultado = 'Operação inválida';
+      }
+
+      return resultado;
+    }
+
+    document.write('O resultado é: ' + calc(num1,num2,operacao));
+
+  </script>
+</body>
+
+</html>
