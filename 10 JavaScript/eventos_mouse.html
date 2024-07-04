@@ -4,14 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>JavaScript</title>
-    <script>
-        
 
-        function acao() {
-            alert('evento aconteceu!');
+    <script>
+
+        //  function acao(){
+        //    alert('Evento disparado')
+        //  }
+        function acao1() {
+            alert('Elemento foi cliclado')
         }
         function acao2() {
-            alert('voce clickou duas vezes!');
+            alert('O cursor do mouse deixou a região do elemento')
         }
 
     </script>
@@ -19,10 +22,24 @@
 </head>
 
 <body>
+    <!-- Div com evento onclick. Esta linha está comentada, então o evento não será executado. -->
+    <!-- <div onclick="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
 
-    <div onclick="acao()" style="background: #ccc; height: 150px"> </div>
+    <!-- Div com evento ondblclick (duplo clique). Esta linha está comentada, então o evento não será executado. -->
+    <!-- <div ondblclick="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
 
-    <div ondblclick="acao2()" style="background: #c6bb23; height: 150px"> </div>
+    <!-- Div com evento onmouseup (liberar botão do mouse). Esta linha está comentada, então o evento não será executado. -->
+    <!-- <div onmouseup="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
+
+    <!-- Div com evento onmouseover (quando o mouse passa por cima). Esta linha está comentada, então o evento não será executado. -->
+    <!-- <div onmouseover="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
+
+    <!-- Div com evento onmouseout (quando o mouse sai de cima). Esta linha está comentada, então o evento não será executado. -->
+    <!-- <div onmouseout="acao()" style="background-color: #ccc; height: 150px; width: 150px;"></div> -->
+
+    <!-- Div com dois eventos: onclick (clique) e onmouseout (quando o mouse sai de cima). -->
+    <div onclick="acao1()" onmouseout="acao2()" style="background-color: #ccc; height: 150px; width: 150px;"></div>
 </body>
+
 
 </html>
