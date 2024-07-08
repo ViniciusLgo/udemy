@@ -7,15 +7,16 @@
 
   <script>
     function distribuiCaracter() {
-      //selecionar o valor digitado
-      var caracter = document.getElementById('entrada').value
+      // Selecionar o valor digitado
+      var caracter = document.getElementById('entrada').value;
 
-      //limpar o campo de digitação
-      document.getElementById('entrada').value = ''
+      // Limpar o campo de digitação
+      document.getElementById('entrada').value = '';
 
-      //limpar espaços em branco nas extremidades da string
-      caracter.trim()
+      // Limpar espaços em branco nas extremidades da string
+      caracter = caracter.trim();
 
+      // Verificar o valor do caracter digitado e distribui-lo para o campo correto
       switch (caracter) {
         case '0':
         case '1':
@@ -27,26 +28,29 @@
         case '7':
         case '8':
         case '9':
-          //adicionar o caracter no campo referente a números
-          document.getElementById('apenas_numeros').value = caracter
+          // Adicionar o caracter no campo referente a números
+          document.getElementById('apenas_numeros').value = caracter;
           break;
         default:
-          //adicionar o caracter no campo referente a letras
-          document.getElementById('apenas_letras').value = caracter
+          // Adicionar o caracter no campo referente a letras
+          document.getElementById('apenas_letras').value = caracter;
       }
     }
-
   </script>
 
 </head>
 
 <body>
+  <!-- Campo de texto onde o usuário digita o caracter -->
   <input type="text" placeholder="Digite um caracter aqui" onkeyup="distribuiCaracter()" id="entrada">
 
   <hr />
+
+  <!-- Campo para mostrar as letras -->
   <span>Letras:</span>
   <input type="text" disabled="disabled" id="apenas_letras">
 
+  <!-- Campo para mostrar os números -->
   <span>Números:</span>
   <input type="text" disabled="disabled" id="apenas_numeros">
 
