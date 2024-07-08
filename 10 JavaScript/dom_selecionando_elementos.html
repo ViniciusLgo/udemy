@@ -4,22 +4,29 @@
 <head>
     <meta charset="utf-8">
     <title>JavaScript</title>
-
-    <script>
-
-
-    </script>
-
 </head>
 
 <body>
+    <!-- Campo de texto para o usuário digitar seu nome -->
     <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
 
+    <!-- Seção de script para incluir o JavaScript -->
     <script>
-        console.log(document.getElementById('nome_usuario'))
-        console.log(document.getElementsByTagName('input'))
-        console.log(document.getElementsByClassName('campo_texto'))
-        console.log(document.getElementsByName('nome'))
+        // Obtendo o elemento pelo ID
+        console.log(document.getElementById('nome_usuario'));
+        // Dica: getElementById é usado para selecionar um único elemento que tem o ID especificado.
+
+        // Obtendo todos os elementos de entrada (input) na página
+        console.log(document.getElementsByTagName('input'));
+        // Dica: getElementsByTagName retorna uma coleção de todos os elementos do tipo especificado (neste caso, 'input').
+
+        // Obtendo todos os elementos com a classe 'campo_texto'
+        console.log(document.getElementsByClassName('campo_texto'));
+        // Dica: getElementsByClassName retorna uma coleção de todos os elementos que possuem a classe especificada.
+
+        // Obtendo todos os elementos com o atributo 'name' igual a 'nome'
+        console.log(document.getElementsByName('nome'));
+        // Dica: getElementsByName retorna uma coleção de todos os elementos que possuem o atributo 'name' com o valor especificado.
     </script>
 </body>
 
