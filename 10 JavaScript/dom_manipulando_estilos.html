@@ -7,10 +7,12 @@
 
   <script>
 
-    function modificaEstilo(corDeFundo) {
+    function modificaEstilo(corDeFundo, l,a) {
 
 
       document.getElementById('quadrado').style.backgroundColor = corDeFundo;
+      document.getElementById('quadrado').style.width = l;
+      document.getElementById('quadrado').style.height = a;
     }
 
   </script>
@@ -23,11 +25,11 @@
 
 <h3>Manipulando estilos</h3>
 
-<button type="button" onclick="modificaEstilo('#FF0000')" >Vermelhor</button>
+<button type="button" onclick="modificaEstilo('#FF0000','200px')" >Vermelhor</button>
 
-<button type="button" onclick="modificaEstilo('#00FF00')" >Verde</button>
+<button type="button" onclick="modificaEstilo('#00FF00', '150px', '20px')" >Verde</button>
 
-<button type="button" onclick="modificaEstilo('#0000FF')" >Azul</button>
+<button type="button" onclick="modificaEstilo('#0000FF', '130px', '120px')" >Azul</button>
 
   <hr>
   <div id="quadrado" style="border: solid 1px #000; width: 100px; height: 100px"></div>
