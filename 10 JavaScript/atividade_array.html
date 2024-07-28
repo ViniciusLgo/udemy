@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplicação de Gerenciamento de Objetos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    input,
+    button {
+      margin: 5px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Gerenciamento de Objetos</h1>
+  <input type="text" id="input-objeto" placeholder="Digite um objeto">
+  <button id="adicionar-btn">Adicionar</button>
+  <button id="ordenar-btn">Ordenar</button>
+  <ul id="lista-objetos"></ul>
+
+  <script>
+    // Inicializa o array com os objetos
+    var objetos = [''];
+
+    // Função para atualizar a lista de objetos na página
+    function atualizarLista() {
+      var lista = document.getElementById('lista-objetos');
+      lista.innerHTML = '';
+      objetos.forEach(function (objeto) {
+        var li = document.createElement('li');
+        li.textContent = objeto;
+        lista.appendChild(li);
+      });
+    }
+
+    // Função para adicionar um objeto ao array
+    function adicionarObjeto() {
+      var input = document.getElementById('input-objeto');
+      var valor = input.value.trim();
+
+      if (valor === '') {
+        alert('Informe um valor válido');
+      } else if (objetos.includes(valor)) {
+        alert('Objeto já foi adicionado');
+      } else {
+        objetos.push(valor);
+        console.log(objetos);
+        input.value = '';
+        atualizarLista();
+      }
+    }
+
+    // Função para ordenar os objetos do array
+    function ordenarObjetos() {
+      objetos.sort();
+      console.log(objetos);
+      atualizarLista();
+    }
+
+    // Adiciona os event listeners aos botões
+    document.getElementById('adicionar-btn').addEventListener('click', adicionarObjeto);
+    document.getElementById('ordenar-btn').addEventListener('click', ordenarObjetos);
+
+    // Atualiza a lista na primeira carga da página
+    atualizarLista();
+  </script>
+</body>
+
+</html>
