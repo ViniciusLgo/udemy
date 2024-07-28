@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios com Arrays e Tabuada</title>
+  <script>
+
+
+    // 1. Percorrendo e listando itens de Arrays com for
+
+    var lista_frutas = Array()
+    lista_frutas[0] = 'Banana'
+    lista_frutas[1] = 'Maçã'
+    lista_frutas[2] = 'Morango'
+    lista_frutas[3] = 'Uva'
+
+    for (var i = 0; i < lista_frutas.length; i++) {
+      document.write(lista_frutas[i] + '<br>')
+      console.log(lista_frutas[i])
+    }
+
+
+    // 2. Criando uma tabuada de 1 a 10 (laços encadeados) com while
+
+    var x = 1; // tabuada do 1 ao 10
+    var y = 1; // multiplicador
+
+    while (x <= 10) {
+      document.write('<h2>Tabuada do ' + x + '</h2>')
+      while (y <= 10) {
+        document.write(x + ' x ' + y + ' = ' + (x * y) + '<br>')
+        y++
+      }
+
+      y = 1
+      x++
+    }
+
+
+
+  </script>
+</head>
+
+<body>
+  <h1>Exercícios com Arrays e Tabuada</h1>
+  <div id="arrayOutput"></div>
+  <div id="tabuadaOutput"></div>
+</body>
+
+</html>
