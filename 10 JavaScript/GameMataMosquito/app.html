@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mata mosquito game</title>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="estilo.css" />
+		<script src="jogo.js"></script>
+	</head>
+	<body onresize="ajustaTamanhoPalcoJogo()">
 
-    <script src="jogo.js"></script>
-</head>
-<body>
-    
+		<div class="painel">
+			<div class="vidas">
+				<img id="v1" src="src/img/coracao_cheio.png" />
+				<img id="v2" src="src/img/coracao_cheio.png" />
+				<img id="v3" src="src/img/coracao_cheio.png" />
+			</div>
 
+			<div class="cronometro">Tempo restante: <span id="cronometro"></span></div>
+		</div>
 
+		<script>
+			document.getElementById('cronometro').innerHTML = tempo
 
-
-
-
-
-</body>
+			var criaMosca = setInterval(function() { 
+				posicaoRandomica()
+			}, criaMosquitoTempo)
+		</script>
+	</body>
 </html>
